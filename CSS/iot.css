@@ -27,10 +27,28 @@
 .nav li {
     display: inline;
   }
+h1 {
+  font-size: 35px;
+  text-align: left;
+}
 h1, h2, h3 {
-    font-family: monospace
+    font-family: monospace;
   }
   .navbar-nav > li{
     padding-left:30px;
     padding-right:30px;
-  }
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.carousel {
+    border: solid #5637DD;
+}
+

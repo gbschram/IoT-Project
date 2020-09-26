@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" /> 
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="CSS\iot.css" />
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                   <img src="" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h1>The Internet of Things Field Notebook</h1>
+                </div>
+                <div class="col col-md-4 col-xl-2">
+                    <button class="btn btn-info btn-lg mt-4"data-toggle="modal" data-target="#learnmoreModal">
+                        <a role="button" class="btn"> How Connected Are You? </a> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="iot-home.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> Benfits and Dangers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="practice.html"><i class="fa fa-address-card fa-lg"></i> Best Practice</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <container>
+        <h1>Benefits and Dangers of IoT</h1>
+        <div class= "container">
+            <div class="row row-content align items-center">
+                <div class="col-sm-4 order-sm-last col-md-3">
+                    <h2>Benefits of IoT</h2>
+                </div>
+                    <div class="col">
+                        <div class="media">
+                            <img class="d-flex mr-3 img-thumbnail" src="images\car.jpg" id="iot car" class= "d-flex order-last ml-3" width="500" height="200" alt="iot chart" />
+                            <div class="media-body align-self-center">
+                                <h3>Progress</h3>
+                                <p class="d-none d-sm-block">IoT devices have made their way into nearly every industry and have been adapted to be used in extremely critical environments. IoT has expanded to affect and/or include medical devices, transportation, telecommunications, intelligence gathering, and  national critical infrastructure. Sensitive uses aside, IoT has seeped into the everyday lives of people on a global scale; “smart” devices flood our markets selling the convenience of connectivity.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div class="row row-content align-items-center">
+                <div class="col-sm-4 col-md-3">
+                    <h2>Dangers of IoT</h2>
+                </div>
+                <div class="col">
+                    <div class="media">
+                        <img src="images\chart.jpg" alt="iotchart" id="iot chart" class= "d-flex order-last ml-3" width="500" height="200" />
+                            <div class="media-body align-self-center">
+                                <h3>Exploitation</h3>
+                                <p class="d-none d-sm-block">The pace the internet of things is moving at is exceeding the rate of policy change that should reflect the expansion. The convenience and progress that IoT has to offer is taking precedence over  the potential for danger that comes with it. The vulnerabilities of devices conflict with the confidentiality, integrity, and availability of their users and services.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </container>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+            		<ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Benefits and Dangers</a></li>
+                        <li><a href="">Best Practice</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5">
+                	<h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>       
+           </div>
+        </div>
+    </footer>
+        
+    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+            $(".carousel").carousel( { interval: 2000 } );
+            $("#carouselPause").click(function(){
+                $(".carousel").carousel("pause");
+            });
+            $("#carouselPlay").click(function(){
+                $(".carousel").carousel("cycle");
+            });
+        });
+    </script>  
+
+</body>
+
+
+
+
+</html>
+
+
+

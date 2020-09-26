@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name = "viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" /> 
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="CSS\iot.css" />
+
+
+    <title>Internet of Things</title>
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                   <img src="" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h1>The Internet of Things Field Notebook</h1>
+                </div>
+                <div class="col col-md-4 col-xl-2">
+                    <button class="btn btn-info btn-lg mt-4"data-toggle="modal" data-target="#learnmoreModal">
+                        <a role="button" class="btn"> How Connected Are You? </a> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bendan.html"><i class="fa fa-info fa-lg"></i> Benfits and Dangers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="practice.html"><i class="fa fa-address-card fa-lg"></i> Best Practice</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>IoT Best Practice</h1>
+        
+    <div class="container">
+
+        <div class="row row-content">
+            <div class="col-12">
+                <h2>What is YOUR best practice?</h2>
+                <hr />
+            </div>
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label">Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col offset-md-2">
+                            Do you use an iPhone/Android?
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                <label for="contactNo" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col offset-md-2">
+                            Do you have any social media accounts? 
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                <label for="contactNo" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Please list any major devices used daily</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+       </div>
+
+    
+        <div class="row row-content">
+            <div class="col">
+                <h3>Threat Mitigation</h3>
+                <div id="accordion">
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h4>
+                                <a data-toggle="collapse" data-target="#bootstrap">Updates</a>
+                            </h4>
+                            <div class="collapse show" id="bootstrap" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Keep devices and applications updated.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h4>
+                                <a class="collapsed" data-toggle="collapse" data-target="#git">Passwords</a>
+                            </h4>
+                            <div class="collapse" id="git" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Use a variety of strong passwords. (Without your birthday)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h4>
+                                <a class="collapsed" data-toggle="collapse" data-target="#mongo">Education</a>
+                            </h4>
+                            <div class="collapse" id="mongo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Be aware of operational and social engineering techniques that people are using to steal information.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h4>
+                                <a class="collapsed" data-toggle="collapse" data-target="#node">Product Awareness</a>
+                            </h4>
+                            <div class="collapse" id="node" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">No, you dont need that new smart-fridge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+            		<ul class="list-unstyled">
+                        <li><a href="iot-home.html">Home</a></li>
+                        <li><a href="bendan.html">Benefits and Dangers</a></li>
+                        <li><a href="#">Best Practice</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5">
+                	<h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>       
+           </div>
+        </div>
+    </footer>
+        
+    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+     
+
+</body>
+
+
+
+
+</html>
+
