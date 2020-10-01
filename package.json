@@ -22,7 +22,7 @@
     "lite-server": "^2.5.4"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/fontawesome-free": "^5.15.0",
     "@popperjs/core": "^2.5.2",
     "bootstrap": "^4.5.2",
     "bootstrap-social": "^5.1.1",
